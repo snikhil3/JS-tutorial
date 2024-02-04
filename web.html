@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My js web</title>
+</head>
+
+
+
+
+<style>
+	body {
+		background-color: darkcyan;
+
+	}
+
+
+
+	.red-button {
+		background-color: rgb(255, 0, 25);
+		border-radius: 100px;
+		border-color: gold;
+		color: aliceblue;
+	}
+
+	.Yellow-button {
+		background-color: yellow;
+	}
+
+	.Orange-button {
+		background-color: orange;
+	}
+
+	.rock {
+		border-radius: 1000px;
+		background-color: black;
+		border-color: gold;
+		color: white;
+		width: 100px;
+		height: 50px;
+		font-size: 20px;
+		margin-left: 600px;
+		margin-top: 200px;
+		margin-right: 20px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+	}
+
+	.rock:hover {
+		background-color: lawngreen;
+		font-size: 30px;
+		color: black;
+		transition: all .5s ease-out;
+		cursor: pointer;
+
+	}
+
+	.paper:hover {
+		background: lawngreen;
+		font-size: 30px;
+		color: black;
+		transition: all .5s ease-out;
+		cursor: pointer;
+
+
+
+	}
+
+	.sissors:hover {
+		background-color: lawngreen;
+		font-size: 30px;
+		color: black;
+		transition: all .5s ease-out;
+		cursor: pointer;
+
+
+
+	}
+
+	.paper {
+		border-radius: 200px;
+		background-color: black;
+		border-color: gold;
+		color: white;
+		width: 100px;
+		height: 50px;
+		font-size: 20px;
+		margin-right: 20px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+	}
+
+	.sissors {
+		border-radius: 200px;
+		background-color: black;
+		border-color: gold;
+		color: white;
+		width: 110px;
+		height: 50px;
+		font-size: 20px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	.Reset_Score {
+		border-radius: 0px;
+		color: white;
+		background-color: red;
+		width: 60px;
+		height: 40px;
+		font-size: 10px;
+		margin-left: 740px;
+		margin-top: 10px;
+
+	}
+
+
+	.floating{
+		color:darkred;
+		font-weight: 900;
+		font-size: 30px  ;
+	}
+	.webScore {
+		color: black;
+		margin-top: 50px;
+		margin-left: 680px;
+		font-size: large;
+		font-weight: bolder;
+
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+	}
+
+	.j-result {
+		margin-left: 765px;
+		color: black;
+		font-family: fantasy;
+	}
+
+	.j-move {
+		margin-left: 670px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-variant: small-caps;
+		font-weight: bold;
+	}
+
+	.containeer {
+		text-align: center;
+	}
+
+	.heading h1 {
+		color: aliceblue;
+		font-style: italic;
+		font-family: 'Times New Roman', Times, serif;
+
+	}
+</style>
+
+<body>
+	<div align="center" class="containeer">
+		<h1>LETS ROLL</h1>
+	</div>
+
+
+	<!--<button>Click</button>
+		<button> Ram</button>
+		<button>
+			momo
+		</button>
+
+		<button title="click me" class="red-button" onclick="
+		alert('Hiii');
+		">
+			Click mee</button>
+		<p>
+		<p>
+			Adults plain Cotton shirt
+		</p>
+		<p>
+			Price:$7.99
+		</p>
+		<button title="Add to cart" class="Yellow-button" onclick="
+				alert('Added');">
+			Add to cart</button>
+
+
+		<button title="Buy Now" class="Orange-button" onclick="
+			alert('Purchased');
+			console.log('Loading...');">
+			Buy Now
+
+		</button>
+		<button onclick="
+				cartQuantity=cartQuantity+1;
+				console.log('Cart Quantity:' , cartQuantity);
+				finalQuantity=cartQuantity+finalQuantity">Add to cart</button>
+		<button onclick="
+		console.log('finalQuantity: ',finalQuantity)">show quantity</button>
+		<button onclick="
+				cartQuantity=cartQuantity+2;
+				console.log('Cart Quantity:',cartQuantity );
+				finalQuantity=cartQuantity+finalQuantity" ;>+2</button>
+		<button onclick="
+		        cartQuantity=cartQuantity+4;
+				console.log('Cart Quantity: ', cartQuantity);
+				finalQuantity=cartQuantity+finalQuantity">+4</button>
+		<button onclick="
+				cartQuantity=0;
+				finalQuantity=0;
+				console.log( 'Cart is empty',cartQuantity )  ">Reset Cart </button>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate distinctio nisi assumenda in, iure officia
+			natus provident nihil temporibus. Totam odit eligendi sed, rerum repudiandae blanditiis exercitationem corporis
+			quo est.
+		</p>
+		<script>
+			console.log("Welcome");
+			let cartQuantity = 0;
+			let finalQuantity = 0;
+
+		</script>-->
+	<!-----------------ROCK---------------------->
+<marquee class="floating" scrollamount="12">Rock crushes scissors, scissors cuts paper, paper covers rock</marquee>
+
+	<button title='rock' class='rock' onclick="
+		pickComputerMove();
+		playGame('Rock');
+		
+		
+				"> Rock👊</button>
+
+	<!--------------------------PAPER------------------------------->
+	<button title='paper' class='paper' onclick="
+		pickComputerMove();
+		playGame('paper');
+			"> Paper🖐️</button>
+	<!-----------------sissor-------------------->
+	<button title='sissors' class='sissors' onclick="
+			pickComputerMove();
+			playGame('sissors');
+				"> Sissors✌️</button>
+	<p class="webScore"></p>
+	<p class="j-result"></p>
+	<p class="j-move"></p>
+	<button title='Reset_Score' class='Reset_Score' onclick="
+				
+				Score.WIN=0
+				Score.Lose=0
+				Score.TIE=0
+				updateScore();
+				alert('Scores reseted');
+				">
+
+		Rest Score</button>
+
+
+
+
+
+	<script>
+
+		function updateScore() //DoM to display score in web page
+		{
+			document.querySelector('.webScore')
+				.innerHTML = (`Wins:${Score.WIN} 
+					Loses:${Score.Lose} 
+					TIES:${Score.TIE}`);
+		}
+
+		const Score = {
+			WIN: 0,
+			Lose: 0,
+			TIE: 0
+		};
+
+		let computerPlay = ''
+		function pickComputerMove() {
+			const randomNumber = Math.random();
+
+			if (randomNumber >= 0 && randomNumber < 1 / 3) {
+				computerPlay = 'Rock';
+				console.log('Rock');
+			}
+			else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+				computerPlay = 'paper';
+				console.log('paper');
+			}
+			else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+				computerPlay = 'sissors';
+				console.log('sissors');
+			}
+		}
+		updateScore();
+		function playGame(playerMove) {
+			let result = '';
+
+			if (playerMove === 'sissors') {
+				if (computerPlay === 'sissors') {
+					result = 'TIE 😜';
+				}
+				else if (computerPlay === 'paper') {
+					result = 'WIN 🥳'
+				}
+				else if (computerPlay === 'Rock') {
+					result = 'Lose 😒';
+				}
+			}
+			else if (playerMove === 'paper') {
+				if (computerPlay === 'paper') {
+					result = 'TIE 😜'
+				}
+				else if (computerPlay === 'Rock') {
+					result = 'WIN 🥳';
+				}
+				else if (computerPlay === 'sissors') {
+					result = 'Lose 😒';
+				}
+			}
+			else if (playerMove === 'Rock') {
+				if (computerPlay === 'Rock') {
+					result = 'TIE 😜';
+				}
+				else if (computerPlay === 'paper') {
+					result = 'Lose 😒'
+				}
+				else if (computerPlay === 'sissors') {
+					result = 'WIN 🥳';
+				}
+			}
+			if (result === 'WIN 🥳') {
+				Score.WIN = Score.WIN + 1;
+			}
+			else if (result === 'Lose 😒') {
+				Score.Lose = Score.Lose + 1;
+			}
+			else if (result === 'TIE 😜') {
+				Score.TIE = Score.TIE + 1;
+			}
+			/*alert(`You picked ${playerMove}. Computer picked ${computerPlay}. ${result}.
+					Wins:${Score.WIN} 
+					Looses:${Score.Lose} 
+					TIES:${Score.TIE}`);*/
+
+			updateScore();
+			document.querySelector('.j-result') //DOM TO DISPLAY RESULT IN WEB
+				.innerHTML = result;
+			document.querySelector('.j-move')//DOM TO DISPLAY MOVES IN WEB
+				.innerHTML = (`You:${playerMove}  VS Computer:${computerPlay}`);
+
+		}
+
+
+
+	</script>
+
+
+
+
+</body>
+
+</html>
